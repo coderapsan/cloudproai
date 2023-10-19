@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+  background-color: #1d073e;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Center-align the content horizontally */
+}
+
+/* Menu list styles */
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Center-align items vertically */
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0 20px; /* Add horizontal spacing between menu items */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items vertically */
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; /* Stack the text and image vertically */
+  align-items: center; /* Center-align text and image horizontally */
+}
+
+/* Submenu styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  border-top: 2px solid #f8f2ee;
+  width: 100%; /* Make the submenu as wide as the menu item */
+  text-align: center; /* Center-align submenu content */
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  padding: 10px;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+.submenu a:hover {
+  background-color: #555;
+}
+ 
+
+/* Footer Design  */
+
+
+/* Reset some default styles */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer-logo p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-contact h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+}
+
