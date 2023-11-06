@@ -58,8 +58,8 @@
   left: 0;
   background-color: #444;
   border-top: 2px solid #f8f2ee;
-  width: 100%; /* Make the submenu as wide as the menu item */
-  text-align: center; /* Center-align submenu content */
+  width: 100%;
+  text-align: center; 
 }
 
 .menu-item:hover .submenu {
@@ -88,17 +88,14 @@
 }
  
 
-/* Footer Design  */
 
-
-/* Reset some default styles */
 body, ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* Footer styles */
+
 .footer {
   background-color: #333;
   color: #fff;
@@ -118,7 +115,7 @@ body, ul, li {
 }
 
 .footer-logo img {
-  width: 50px; /* Adjust the size as needed */
+  width: 50px; 
   height: auto;
   border-radius: 50%;
 }
