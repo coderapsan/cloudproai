@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import image1 from '../assets/images/1.jpg'
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                <img src={require('./Images/1.jpg')} alt="Image 6" />
+                <img src={image1} alt="Image 6" />
                     <p>Cloud Pro AI</p>
                 </div>
                 <div class="footer-links">

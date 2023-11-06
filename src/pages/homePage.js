@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
+import logo from '../logo.svg';
+import Navbar from '../components/Navbar';
 // import { Carousel } from 'antd';
-import CarouselFrame from './Components/Carousel'
+import CarouselFrame from '../components/Carousel'
 // import 'antd/dist/antd.css';
-import Footer from './Components/Footer'
+import Footer from '../components/Footer'
 
 
 function HomePage() {

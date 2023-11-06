@@ -1,5 +1,6 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
+// import {Routes, Route} from 'react-router-dom'
+import image1 from '../assets/images/1.jpg';
 
 
 function NavBar() {
@@ -16,11 +17,11 @@ function NavBar() {
       <ul className="menu-list">
   <li className="footer-logo">
     <a href="/">
-      <img src={require('./Images/1.jpg')} alt="Image 6" />
+      <img src={image1} alt="Image 6" />
     </a>
   </li>
   <li className="menu-item" onMouseEnter={handleMenuHover} onMouseLeave={handleMenuHover}>
-    <a href="/">
+    <a href="#">
       Cloud Pro AI
     </a>
     <div className="submenu">
