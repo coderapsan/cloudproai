@@ -1,20 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
-// import { Carousel } from 'antd';
-import CarouselFrame from './Components/Carousel'
-// import 'antd/dist/antd.css';
-import Footer from './Components/Footer'
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import NavBar from  '.Components/NavBar'
+import HomePage from '.Components/Pages/HomePage';
+import ProductsPage from '.Components/Pages/ProductsPage';
+import AboutPage from '.Components/Pages./AboutPage';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
-     <CarouselFrame/>
+    <Router>
+      <div>
+        <NavBar />
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/products">Products</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
 
-     <Footer/>
-    </div>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/products" component={ProductsPage} />
+          <Route path="/about" component={AboutPage} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
