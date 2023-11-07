@@ -11,7 +11,7 @@ function Navbar() {
       </div>
       <ul className="nav-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">CloudProAI</Link>
         </li>
         <li>
           <Link to="/products">Products</Link>
@@ -22,7 +22,21 @@ function Navbar() {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        
+        <li>
+          <Link to="/industries">Industries</Link>
+        </li>
+        <li>
+          <Link to="/careers">Careers</Link>
+        </li>
+        <li>
+          <Link to="/partnerships">Partnerships</Link>
+        </li>
       </ul>
+      <div className="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
     </nav>
   );
 }
