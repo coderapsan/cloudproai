@@ -30,7 +30,7 @@ function Navbar() {
           <Link to="/careers">Careers</Link>
         </li>
         <li>
-          <Link to="/partnerships">Partnerships</Link>
+          <Link to="/partnership">Partnerships</Link>
         </li>
       </ul>
       <div className="search-bar">

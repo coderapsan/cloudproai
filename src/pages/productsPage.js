@@ -1,41 +1,52 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 
-function ProductsPage() {
-  const products = [
+// import servicesData from './services'; // Import the services data
+
+const ProductsPage = () => {
+
+  const servicesData = [
     {
       id: 1,
-      name: "Product 1",
-      description: "Description of Product 1",
-      price: "$100",
+      title: "Data Analytics & Engineering",
+      description:
+        "Our data analytics and engineering services help you make data-driven decisions and build robust data infrastructure.",
     },
     {
       id: 2,
-      name: "Product 2",
-      description: "Description of Product 2",
-      price: "$75",
+      title: "AI/ML Solutions",
+      description:
+        "We offer AI/ML solutions to leverage the power of artificial intelligence and machine learning in your business.",
     },
     {
       id: 3,
-      name: "Product 3",
-      description: "Description of Product 3",
-      price: "$120",
+      title: "Cloud Services",
+      description:
+        "Our cloud services enable you to harness the benefits of cloud computing, from data storage to cloud architecture.",
     },
+    // Add more services as needed
   ];
-
+  
+ 
+  
   return (
-    <div className="products-page">
+    <div className="products-container">
       <h2>Our Products</h2>
-      <ul className="product-list">
-        {products.map((product) => (
-          <li key={product.id} className="product-item">
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-            <p>{product.price}</p>
-          </li>
+      <div className="services-list">
+        {servicesData.map((service) => (
+          <div className="service-card" key={service.id}>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+        <Button color="danger"> Buy</Button>
+
+          </div>
+          
         ))}
-      </ul>
+      </div>
+      
     </div>
   );
-}
+};
 
 export default ProductsPage;

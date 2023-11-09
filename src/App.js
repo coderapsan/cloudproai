@@ -3,8 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import HomePage from "./pages/homePage";
 import ProductsPage from "./pages/productsPage";
-import AboutPage from "./pages/aboutPage";
 import Footer from "./components/Footer";
+import AboutPage from "./pages/aboutPage";
+import PartnershipPage from "./pages/partnershippage";
+import ContactPage from "./pages/contactPage";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import PartnershipPage from "./pages/partnershippage";
 
 function App() {
   return (
@@ -14,6 +18,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/partnership" element={<PartnershipPage />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
