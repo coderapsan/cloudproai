@@ -1,14 +1,19 @@
 import React from "react";
-import image1 from '../assets/images/1.jpg'
+import image1 from '../assets/images/1.jpg';
 import { Link } from "react-router-dom";
-import "./Navbar.css"; 
+import { Navbar, NavbarBrand } from "reactstrap"; // Import Navbar and NavbarBrand from React Bootstrap
+import "./Navbar.css";
 
-function Navbar() {
+function MyNavbar() {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <Link to="/"> <img src={image1} alt="Image 6" /></Link>
-      </div>
+    <Navbar className="my-2" >
+      <NavbarBrand href="/">
+        <img className="logoImage"
+          alt="logo"
+          src={image1}
+        
+        />
+      </NavbarBrand>
       <ul className="nav-links">
         <li>
           <Link to="/">CloudProAI</Link>
@@ -36,9 +41,12 @@ function Navbar() {
       <div className="search-bar">
         <input type="text" placeholder="Search..." />
         <button>Search</button>
-      </div>
-    </nav>
+        </div>
+
+
+
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default MyNavbar;
